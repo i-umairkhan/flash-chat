@@ -1,5 +1,5 @@
 import 'package:flash_chat/screens/login_screen.dart';
-// import 'package:flash_chat/screens/registration_screen.dart';
+import 'package:flash_chat/screens/registration_screen.dart';
 import '../Components/rounded_button.dart';
 import 'package:flutter/material.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
@@ -49,21 +49,22 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
             const SizedBox(
               height: 48.0,
             ),
-            RoundedButtonLogin(
+            RoundedButton(
               color: Colors.lightBlueAccent,
               title: 'Login',
               onPressed: () {
                 Navigator.pushNamed(context, LoginScreen.id);
               },
-            )
+            ),
+            RoundedButton(
+                color: Colors.blueAccent,
+                title: 'Register',
+                onPressed: () {
+                  Navigator.pushNamed(context, RegistrationScreen.id);
+                })
           ],
         ),
       ),
     );
   }
 }
-
-
-
-// login : lightblueAccent  , Login  , Navigator.pushNamed(context, LoginScreen.id);
-// Registration : blueAccent ,  Register  , Navigator.pushNamed(context, RegistrationScreen.id)

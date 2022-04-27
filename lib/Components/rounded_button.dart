@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 // import '../screens/login_screen.dart';
 
-class RoundedButtonLogin extends StatelessWidget {
-  const RoundedButtonLogin({
+class RoundedButton extends StatelessWidget {
+  const RoundedButton({
     required this.color,
     required this.title,
     required this.onPressed,
@@ -27,6 +27,7 @@ class RoundedButtonLogin extends StatelessWidget {
           height: 42.0,
           child: Text(
             title,
+            style: const TextStyle(color: Colors.white),
           ),
         ),
       ),
